@@ -24,7 +24,7 @@ La narrativa es un pilar fundamental del proyecto, buscando generar impacto emoc
 ## 👥 Equipo de Desarrollo
 
 - **Agvsttt**  
-  *Escritor, Guionista y Director*
+  *Escritor, Guionista, Director y Creación de CGs*
 
 - **McLovinSCH**  
   *Programador y Diseñador de Sprites*
