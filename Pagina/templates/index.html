@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanguis Ventura</title>
+<meta name="description" content="Sanguis Ventura: misterio, puzzles y horror en un hospital distorsionado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;800&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<canvas id="static"></canvas>
+
+<nav>
+  <a class="logo" href="#inicio">SV</a>
+  <ul>
+    <li><a href="#ficha">Ficha</a></li>
+    <li><a href="#personajes">Personajes</a></li>
+    <li><a href="#multimedia">Multimedia</a></li>
+    <li><a href="#descarga">Descargar</a></li>
+    <li><a href="#instalacion">Instalación</a></li>
+  </ul>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="inicio">
+  <!-- Hilo y espada (Espada de Damocles) -->
+  <svg class="sword" viewBox="0 0 60 280" aria-hidden="true">
+    <line x1="30" y1="0" x2="30" y2="130" stroke="#8d857b" stroke-width="1"/>
+    <path d="M30 265 L24 150 L24 140 L36 140 L36 150 Z" fill="#cfc8bb"/>
+    <rect x="14" y="132" width="32" height="8" fill="#9b0d1a"/>
+    <path d="M30 265 L30 150" stroke="#777" stroke-width="1"/>
+    <circle cx="30" cy="268" r="2" fill="#d3182b"/>
+  </svg>
+  <p class="kicker">Horror · Misterio · Puzzles</p>
+  <h1>Sanguis <span>Ventura</span></h1>
+  <p class="tagline">Una llamada entre la estática. Un hospital vacío. Una amistad que pende de un hilo.</p>
+  <a href="#descarga" class="btn solid">Descargar juego</a>
+  <div class="drip"></div>
+</header>
+
+<!-- ============ FICHA TÉCNICA + SINOPSIS ============ -->
+<section id="ficha" class="reveal">
+  <p class="kicker">Expediente</p>
+  <h2>Ficha técnica</h2>
+  <div class="grid2">
+    <div class="cover"><!-- Reemplaza por: <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo de Sanguis Ventura"> -->[ Portada / Arte principal ]</div>
+    <div>
+      <ul class="specs">
+        <li><b>Título</b><span>Sanguis Ventura</span></li>
+        <li><b>Lanzamiento</b><span>Próximamente</span></li>
+        <li><b>Género</b><span>Horror, misterio, puzzles</span></li>
+        <li><b>Plataforma</b><span>[PC / Windows]</span></li>
+        <li><b>Desarrollador</b><span>Sanguis Ventura Team</span></li>
+        <li><b>Idiomas</b><span>Español</span></li>
+        <li><b>Versión</b><span>v0.1</span></li>
+      </ul>
+      <div class="synopsis">
+        <h3 style="margin-top:2rem">Sinopsis</h3>
+        <p>Damo visita con regularidad a su mejor amigo Niso, hospitalizado en coma tras un misterioso incidente. Una noche recibe una llamada de Niso, envuelta en una estática inquietante. Al llegar al hospital lo encuentra vacío y en silencio.</p>
+        <p>Lo que empezó como una visita de rutina se convierte en una investigación de horror. Damo deberá enfrentarse a amenazas sobrenaturales y a sus propios recuerdos, mientras desentraña la verdad del incidente y la naturaleza oculta de su propio ser.</p>
+        <p>Amistad, traición, culpa y redención: todo cuelga de un hilo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERSONAJES ============ -->
+<section id="personajes" class="reveal">
+  <p class="kicker">Los involucrados</p>
+  <h2>Personajes</h2>
+  <div class="chars">
+    <article class="char">
+      <div class="portrait"><img src="{{ url_for('static', filename='img/Damo_Profile.png') }}" alt="Damo"></div>
+      <div class="info"><h3>Damo</h3><span class="role">Protagonista</span>
+        <p>Joven dormilón y algo vago que siempre vivió a la sombra del éxito de Niso. Entre la admiración y la envidia, su conflicto interno se agrava tras el accidente.</p></div>
+    </article>
+    <article class="char">
+      <div class="portrait"><!-- <img src="{{ url_for('static', filename='img/niso.png') }}" alt="Niso"> -->[ Niso ]</div>
+      <div class="info"><h3>Niso</h3><span class="role">Deuteragonista</span>
+        <p>Amigo de la infancia de Damo: habilidoso, popular y exitoso. Detrás de su éxito hay soledad, y sobre su cabeza pende una amenaza constante.</p></div>
+    </article>
+    <article class="char">
+      <div class="portrait"><!-- <img src="{{ url_for('static', filename='img/kiru.png') }}" alt="Kiru"> -->[ Kiru ]</div>
+      <div class="info"><h3>Kiru</h3><span class="role">Gato negro · Prólogo</span>
+        <p>Sirve como punto de guardado y guía en el hospital distorsionado. Un símbolo de misterio que aparece solo en el prólogo.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ MULTIMEDIA ============ -->
+<section id="multimedia" class="reveal">
+  <p class="kicker">Evidencia</p>
+  <h2>Multimedia</h2>
+  <div class="video">
+    <!-- Reemplaza por tu tráiler:
+    <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" title="Tráiler" allowfullscreen loading="lazy"></iframe> -->
+    [ Tráiler / Gameplay ]
+  </div>
+  <div class="gallery" id="gallery">
+    <!-- Copia y pega este bloque por cada captura -->
+    <div class="shot" data-full="img/captura1.jpg"><!-- <img src="{{ url_for('static', filename='img/captura1.png') }}" alt="Captura 1"> -->Captura 1</div>
+    <div class="shot" data-full="img/captura2.jpg">Captura 2</div>
+    <div class="shot" data-full="img/captura3.jpg">Captura 3</div>
+    <div class="shot" data-full="img/captura4.jpg">Captura 4</div>
+    <div class="shot" data-full="img/captura5.jpg">Captura 5</div>
+    <div class="shot" data-full="img/captura6.jpg">Captura 6</div>
+  </div>
+</section>
+<div id="lightbox"><img alt=""></div>
+
+<!-- ============ DESCARGA ============ -->
+<section id="descarga" class="download reveal">
+  <div class="dl-wrap">
+    <p class="kicker">Entra si te atreves</p>
+    <h2>Descargar</h2>
+    <div class="dl-buttons">
+      <a class="btn solid" href="#" rel="noopener">Windows (.zip)</a>
+      <a class="btn" href="#" rel="noopener">Itch.io / Steam</a>
+    </div>
+    <p class="dl-meta">Versión [v0.1] · Tamaño [XXX MB]<br>
+      SHA-256: <code>[pega aquí el hash de tu archivo]</code></p>
+    <p class="safe">✔ Descarga solo desde los enlaces oficiales de esta página.</p>
+  </div>
+</section>
+
+<!-- ============ INSTALACIÓN ============ -->
+<section id="instalacion" class="reveal">
+  <p class="kicker">Antes de entrar</p>
+  <h2>Instalación</h2>
+  <ol class="steps">
+    <li><strong>Descarga el archivo</strong><span>Pulsa el botón de descarga y guarda el .zip en tu equipo.</span></li>
+    <li><strong>Descomprime</strong><span>Clic derecho → "Extraer todo" (o usa 7-Zip / WinRAR) en una carpeta de tu elección.</span></li>
+    <li><strong>Ejecuta el juego</strong><span>Abre la carpeta y haz doble clic en <em>SanguisVentura.exe</em>.</span></li>
+  </ol>
+  <div class="req">
+    <b>Requisitos mínimos:</b> SO [Windows 10] · CPU [...] · RAM [... GB] · Gráficos [...] · Espacio [... MB].<br>
+    <b>¿Windows Defender lo bloquea?</b> [Explica aquí qué hacer si aparece una advertencia.]
+  </div>
+</section>
+
+<footer>
+  © 2026 Sanguis Ventura Team · Sanguis Ventura<br>
+  <a href="#">Contacto</a> · <a href="#">Twitter/X</a> · <a href="#">Discord</a>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
